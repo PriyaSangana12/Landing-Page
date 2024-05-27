@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 .header {
   width: 100%;
@@ -26,7 +27,7 @@
   cursor: pointer;
 }
 .home-section {
-  background-image: url("Img/bg.jpeg");
+  background-image: url("Img/bg\ new.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;
@@ -39,37 +40,96 @@
   padding: 60px;
   gap: 100px;
 }
+
+input {
+  height: 40px;
+  width: 250px;
+  text-align: center;
+  margin-right: 20px;
+  background-color: #fcfcfbf7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 2px 2px 5px 1px rgb(129, 125, 125);
+}
+button {
+  height: 40px;
+  width: 300px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e9fe04f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #636768;
+}
+button:hover {
+  background-color: rgb(97, 247, 10);
+  cursor: pointer;
+}
+::placeholder {
+  color: rgb(0, 0, 0);
+}
 h1 {
   font-size: 60px;
-  color: rgb(10, 10, 10);
+  color: rgb(246, 5, 89);
 }
-.input {
-  width: 900px;
-  height: 1000px;
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px 60px;
+}
+p {
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 h2 {
   font-size: 40px;
   color: rgb(22, 92, 3);
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 .about-section {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.bike {
-  width: 400px;
-  height: 400px;
-  margin-left: 80px;
-  margin-right: 50px;
+.IMG {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  margin: 20px 40px;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.car {
-  width: 400px;
-  height: 400px;
-  margin-right: 50px;
-}
+.bike,
+.car,
 .thar {
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
+  transition: transform 0.8s ease-in-out;
+}
+.bike:hover,
+.car:hover,
+.thar:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+@media (max-width:450px){
+  .header > span {
+    font-size: 14px;
+  }
+  .header{
+    gap: 8px;
+  
+  }
 }
