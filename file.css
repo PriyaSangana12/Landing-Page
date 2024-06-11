@@ -62,6 +62,7 @@ input {
   box-shadow: 2px 2px 5px 1px rgb(129, 125, 125);
 }
 button {
+  text-align: center;
   height: 40px;
   width: 300px;
   border: none;
@@ -93,7 +94,8 @@ form {
 }
 p {
   font-size: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  text-align: justify;
 }
 h2 {
   font-size: 40px;
@@ -103,8 +105,7 @@ h2 {
 }
 .about-section {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 .IMG {
   display: flex;
@@ -113,7 +114,6 @@ h2 {
   align-items: center;
   margin: 20px 40px;
   overflow: hidden;
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 .bike,
@@ -123,37 +123,38 @@ h2 {
   height: 380px;
   transition: transform 0.8s ease-in-out;
 }
-.bike:hover,
-.car:hover,
-.thar:hover {
-  transform: scale(1.08);
-  cursor: pointer;
-  border-radius: 50%;
-}
 
-@media (max-width:450px){
+@media (max-width: 450px) {
   .header > span {
     font-size: 14px;
   }
-  .header{
+  .header {
     gap: 8px;
-  
   }
 }
-@media (max-width:780px){
-  h1{
+@media (max-width: 780px) {
+  h1 {
     font-size: 40px;
     text-align: center;
-   
   }
-  
 }
-@media (max-width:450px){
-  input{
+@media (max-width: 450px) {
+  input {
     width: 150px;
     margin: 0px;
   }
-  button{
+  button {
     width: 150px;
+  }
+}
+@media (max-width: 930px) {
+  .IMG {
+    flex-direction: column;
+  }
+  .bike,
+  .car,
+  .thar {
+    width: 90%;
+    height: 90%;
   }
 }
