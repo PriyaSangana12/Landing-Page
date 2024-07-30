@@ -16,7 +16,7 @@
       to modern vehicles like bikes, cars, thar, etc.
     </p>
     <div>
-<img src=".Img/Landing page.png">
+<img src="Img/Landing page.png">
 </div>
   </body>
 </html>
