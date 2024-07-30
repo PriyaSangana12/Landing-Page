@@ -15,5 +15,8 @@
       I have created the landing page of <b>"Find your dream vehicle"</b>related
       to modern vehicles like bikes, cars, thar, etc.
     </p>
+    <div>
+<img src="./Imag /Landing page.png">
+</div>
   </body>
 </html>
